@@ -1,0 +1,242 @@
+<!-- ============================================================
+     CANNELYS — SECTION HERO
+     A coller dans un bloc "Custom Liquid" (Online Store 2.0)
+     ============================================================ -->
+
+{% comment %} [MODIFIER ICI] Image du hero (personne tenant le produit en cuisine) {% endcomment %}
+{% assign cnl_hero_image_url = 'https://cdn.shopify.com/REMPLACER-PAR-VOTRE-IMAGE.jpg' %}
+{% assign cnl_hero_image_alt = 'Femme tenant un paquet de Cannelys Ceylon Cinnamon dans sa cuisine' %}
+
+<section class="cnl-hero">
+  <div class="cnl-hero__inner">
+
+    <div class="cnl-hero__media">
+      {% comment %} [MODIFIER ICI] Remplacer l'URL de l'image ci-dessus (variable cnl_hero_image_url) par le fichier uploadé dans Shopify Admin > Contenu > Fichiers {% endcomment %}
+      <img
+        class="cnl-hero__img"
+        src="{{ cnl_hero_image_url }}"
+        alt="{{ cnl_hero_image_alt }}"
+        loading="eager"
+        width="1200"
+        height="1200"
+      >
+    </div>
+
+    <div class="cnl-hero__content">
+
+      {% comment %} [MODIFIER ICI] Note et nombre d'avis {% endcomment %}
+      <div class="cnl-hero__rating">
+        <span class="cnl-hero__stars" aria-hidden="true">★★★★★</span>
+        <span class="cnl-hero__rating-text">Noté 4,7 par plus de 312 clients</span>
+      </div>
+
+      {% comment %} [MODIFIER ICI] Titre principal {% endcomment %}
+      <h1 class="cnl-hero__title">Votre corps vous parle. Il est temps de l'écouter.</h1>
+
+      {% comment %} [MODIFIER ICI] Sous-titre {% endcomment %}
+      <p class="cnl-hero__subtitle">Une seule cannelle. Bien plus de bénéfices que vous ne l'imaginez.</p>
+
+      {% comment %} [MODIFIER ICI] Les 3 colonnes de bénéfices (icône, titre, description) {% endcomment %}
+      <div class="cnl-hero__benefits">
+
+        <div class="cnl-hero__benefit">
+          <div class="cnl-hero__benefit-icon" aria-hidden="true">📈</div>
+          <div class="cnl-hero__benefit-title">Énergie régulière et glycémie stable</div>
+          <div class="cnl-hero__benefit-text">Fini les coups de barre — une vitalité qui tient toute la journée.</div>
+        </div>
+
+        <div class="cnl-hero__benefit">
+          <div class="cnl-hero__benefit-icon" aria-hidden="true">🌿</div>
+          <div class="cnl-hero__benefit-title">Digestion apaisée</div>
+          <div class="cnl-hero__benefit-text">Moins de ballonnements, un confort retrouvé au quotidien.</div>
+        </div>
+
+        <div class="cnl-hero__benefit">
+          <div class="cnl-hero__benefit-icon" aria-hidden="true">🍃</div>
+          <div class="cnl-hero__benefit-title">Zéro coumarine</div>
+          <div class="cnl-hero__benefit-text">Contrairement à la Cassia courante, toxique — sûre à consommer chaque jour.</div>
+        </div>
+
+      </div>
+
+      {% comment %} [MODIFIER ICI] Lien du bouton CTA {% endcomment %}
+      <a href="/products/cannelys-poudre-de-cannelle-de-ceylan" class="cnl-btn cnl-hero__cta">
+        J'ESSAIE SANS RISQUE
+      </a>
+
+      {% comment %} [MODIFIER ICI] Texte de réassurance sous le bouton {% endcomment %}
+      <p class="cnl-hero__guarantee">
+        <span aria-hidden="true">🛡️</span> Garantie satisfait ou remboursé — 90 jours
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .cnl-hero {
+    background-color: #F5EDE3;
+    padding: 32px 16px;
+  }
+
+  .cnl-hero__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  /* --- Média / image --- */
+  .cnl-hero__media {
+    width: 100%;
+  }
+
+  .cnl-hero__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  /* --- Contenu texte --- */
+  .cnl-hero__content {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #2B1E13;
+  }
+
+  .cnl-hero__title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #2B1E13;
+    margin: 0 0 16px 0;
+  }
+
+  .cnl-hero__subtitle {
+    font-size: 17px;
+    line-height: 1.5;
+    color: #6B6560;
+    margin: 0 0 20px 0;
+  }
+
+  .cnl-hero__rating {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 16px 0;
+  }
+
+  .cnl-hero__stars {
+    color: #4A2E1C;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .cnl-hero__rating-text {
+    font-size: 14px;
+    color: #6B6560;
+  }
+
+  /* --- Bénéfices --- */
+  .cnl-hero__benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 8px 0 28px 0;
+    padding-top: 24px;
+    border-top: 1px solid #EADFCE;
+  }
+
+  .cnl-hero__benefit-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .cnl-hero__benefit-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2B1E13;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .cnl-hero__benefit-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6B6560;
+  }
+
+  /* --- Bouton CTA --- */
+  .cnl-btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #4A2E1C;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  .cnl-btn:hover {
+    background-color: #3D2817;
+    color: #FFFFFF;
+  }
+
+  .cnl-hero__cta {
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 16px;
+  }
+
+  .cnl-hero__guarantee {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #6B6560;
+    margin: 0;
+  }
+
+  /* --- Tablette : desktop 2 colonnes --- */
+  @media screen and (min-width: 900px) {
+    .cnl-hero__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+    }
+
+    .cnl-hero__title {
+      font-size: 42px;
+    }
+  }
+
+  /* --- Mobile : bénéfices empilés en 1 colonne --- */
+  @media screen and (max-width: 599px) {
+    .cnl-hero__benefits {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .cnl-hero__title {
+      font-size: 28px;
+    }
+
+    .cnl-hero__cta {
+      max-width: 100%;
+    }
+  }
+</style>
