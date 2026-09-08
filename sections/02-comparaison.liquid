@@ -1,0 +1,283 @@
+<!-- ============================================================
+     CANNELYS — SECTION COMPARATIF
+     A coller dans un bloc "Custom Liquid" (Online Store 2.0)
+     ============================================================ -->
+
+{% comment %} [MODIFIER ICI] Images des produits concurrents affichés en en-tête de colonne {% endcomment %}
+{% assign cnl_comp_img_1 = 'https://cdn.shopify.com/REMPLACER-CANNELLE-SUPERMARCHE.jpg' %}
+{% assign cnl_comp_img_2 = 'https://cdn.shopify.com/REMPLACER-GELULES-CEYLAN.jpg' %}
+
+<section class="cnl-compare">
+  <div class="cnl-compare__inner">
+
+    <div class="cnl-compare__title-col">
+      {% comment %} [MODIFIER ICI] Titre de la section {% endcomment %}
+      <h2 class="cnl-compare__title">Pourquoi le Ceylan authentique en poudre n'a rien à voir avec le reste</h2>
+    </div>
+
+    <div class="cnl-compare__table-wrap">
+      <p class="cnl-compare__scroll-hint">Faites glisser pour comparer →</p>
+
+      <div class="cnl-compare__table">
+
+        <!-- En-tête -->
+        <div class="cnl-compare__row" style="display:contents;">
+          <div class="cnl-compare__cell cnl-compare__cell--label"></div>
+
+          {% comment %} [MODIFIER ICI] Nom de la marque Cannelys {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys cnl-compare__cell--cannelys-top">
+            <span class="cnl-compare__brand">Cannelys</span>
+          </div>
+
+          {% comment %} [MODIFIER ICI] Image + nom du concurrent 1 {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__header-competitor">
+            <img src="{{ cnl_comp_img_1 }}" alt="Cannelle de supermarché" class="cnl-compare__header-img" loading="lazy" width="80" height="80">
+            <span class="cnl-compare__header-name">Cannelle de supermarché</span>
+          </div>
+
+          {% comment %} [MODIFIER ICI] Image + nom du concurrent 2 {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__header-competitor">
+            <img src="{{ cnl_comp_img_2 }}" alt="Gélules de Ceylan" class="cnl-compare__header-img" loading="lazy" width="80" height="80">
+            <span class="cnl-compare__header-name">Gélules de Ceylan</span>
+          </div>
+        </div>
+
+        <!-- Ligne 1 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Cannelle de Ceylan pure {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Cannelle de Ceylan pure</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">🌱</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 2 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Testé en laboratoire {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Testé en laboratoire</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">🧪</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 3 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Zéro coumarine {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Zéro coumarine</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">✅</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--positive" aria-hidden="true">✓</span></div>
+        </div>
+
+        <!-- Ligne 4 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Soutien énergétique stable {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Soutien énergétique stable</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">⚡</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 5 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Transparence totale {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Transparence totale</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">ℹ️</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 6 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Garantie satisfait ou remboursé {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Garantie satisfait ou remboursé</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">🛡️</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 7 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Origine éthique et contrôlée {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Origine éthique et contrôlée</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys"><span class="cnl-compare__icon" aria-hidden="true">🌐</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+        <!-- Ligne 8 -->
+        <div class="cnl-compare__row" style="display:contents;">
+          {% comment %} [MODIFIER ICI] Ligne : Livraison gratuite {% endcomment %}
+          <div class="cnl-compare__cell cnl-compare__cell--label">Livraison gratuite</div>
+          <div class="cnl-compare__cell cnl-compare__cell--cannelys cnl-compare__cell--cannelys-bottom"><span class="cnl-compare__icon" aria-hidden="true">🚚</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+          <div class="cnl-compare__cell"><span class="cnl-compare__mark cnl-compare__mark--negative" aria-hidden="true">✕</span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .cnl-compare {
+    background-color: #F5EDE3;
+    padding: 48px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #2B1E13;
+  }
+
+  .cnl-compare__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .cnl-compare__title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #2B1E13;
+    margin: 0;
+  }
+
+  /* --- Table wrapper : scroll horizontal si besoin --- */
+  .cnl-compare__table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cnl-compare__scroll-hint {
+    display: none;
+    font-size: 13px;
+    color: #6B6560;
+    margin: 0 0 10px 0;
+  }
+
+  .cnl-compare__table {
+    display: grid;
+    grid-template-columns: minmax(180px, 1.5fr) minmax(110px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+    align-items: stretch;
+    min-width: 620px;
+    background-color: #FAF5EC;
+    border-radius: 16px;
+    padding: 8px;
+  }
+
+  .cnl-compare__cell {
+    display: flex;
+    align-items: center;
+    padding: 16px 14px;
+    font-size: 15px;
+  }
+
+  .cnl-compare__cell--label {
+    color: #2B1E13;
+  }
+
+  /* --- Colonne Cannelys mise en avant --- */
+  .cnl-compare__cell--cannelys {
+    background-color: #4A2E1C;
+    justify-content: center;
+  }
+
+  .cnl-compare__cell--cannelys-top {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    padding: 22px 14px;
+  }
+
+  .cnl-compare__cell--cannelys-bottom {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+
+  .cnl-compare__brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .cnl-compare__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  /* --- En-têtes concurrents --- */
+  .cnl-compare__header-competitor {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .cnl-compare__header-img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
+
+  .cnl-compare__header-name {
+    font-size: 13px;
+    color: #6B6560;
+    line-height: 1.3;
+  }
+
+  /* --- Marques + / x --- */
+  .cnl-compare__mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #D9CFBF;
+    font-size: 13px;
+  }
+
+  .cnl-compare__mark--negative {
+    color: #9C9184;
+  }
+
+  .cnl-compare__mark--positive {
+    color: #2B1E13;
+    border-color: #2B1E13;
+    font-weight: 700;
+  }
+
+  .cnl-compare__table [class*="cnl-compare__cell"]:not(.cnl-compare__cell--cannelys):not(.cnl-compare__cell--label) {
+    justify-content: center;
+  }
+
+  /* --- Desktop : titre à gauche, tableau à droite --- */
+  @media screen and (min-width: 900px) {
+    .cnl-compare__inner {
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .cnl-compare__title {
+      font-size: 38px;
+    }
+  }
+
+  /* --- Mobile : indice de défilement visible --- */
+  @media screen and (max-width: 640px) {
+    .cnl-compare__scroll-hint {
+      display: block;
+    }
+  }
+</style>
